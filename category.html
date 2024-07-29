@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Bootstrap Store</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        /* Custom CSS for responsive images and spacing */
+        .thumbnail img {
+            width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .thumbnail {
+            margin-bottom: 30px; /* Space between rows */
+        }
+        .row {
+            margin-bottom: 30px; /* Space between rows */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="ecommerce.html">Book Store</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="badge pull-right">3</span><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+                    <li><a href="account.html"><i class="glyphicon glyphicon-user"></i></a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">Sign in</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="active dropdown-toggle" data-toggle="dropdown">Categories <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="category.html">Book</a></li>
+                    </li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h2 class="modal-title" id="myModalLabel">Sign in</h2>
+                </div>
+                <div class="modal-body">
+                    <form class="form-signin" role="form">
+                        <h3 class="form-signin-heading">Sign in with your email address</h3>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email address" required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password" required>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <a href="#" class="btn btn-facebook btn-large btn-caps btn-block">Facebook <span class="icon-facebook"></span></a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="#" class="btn btn-twitter btn-large btn-caps btn-block">Twitter <span class="icon-twitter"></span></a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="#" class="btn btn-lg btn-caps btn-block"><span class="icon-dribbble"></span></a>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <hr>
+        <div class="row">
+            <div class="col-sm-4 col-md-3">
+                <h3>Categories</h3>
+                <div class="list-group">
+                    <a href="category.html" class="list-group-item">Books</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-9">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <img src="f1fa34a1ca89f9faf029fc326cc7e3b8-2889441413019296149.jpg" alt="">
+                            <div class="add-to-cart">
+                                <a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+                            </div>
+                            <div class="caption">
+                                <h4 class="pull-right">$11</h4>
+                                <h4><a href="product.html">1<sup>st</sup> Product</a></h4>
+                                <p>Book 1</p>
+                                <div class="ratings">
+                                    <p class="pull-right"><a href="product.html#comments">15 reviews</a></p>
+                                    <p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <img src="44d4871f323545555fa6a276cbdad36b-2889446589532979754.jpg" alt="">
+                            <div class="add-to-cart">
+                                <a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+                            </div>
+                            <div class="caption">
+                                <h4 class="pull-right">$11</h4>
+                                <h4><a href="product.html">2<sup>nd</sup> Product</a></h4>
+                                <p>Book 2</p>
+                                <div class="ratings">
+                                    <p class="pull-right"><a href="product.html#comments">15 reviews</a></p>
+                                    <p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <img src="5bb66b3f618bb932c769035356a89341-2889437796836404028.jpg" alt="">
+                            <div class="add-to-cart">
+                                <a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+                            </div>
+                            <div class="caption">
+                                <h4 class="pull-right">$7</h4>
+                                <h4><a href="product.html">3<sup>rd</sup> Product</a></h4>
+                                <p>Book 3</p>
+                                <div class="ratings">
+                                    <p class="pull-right"><a href="product.html#comments">15 reviews</a></p>
+                                    <p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <img src="5bb66b3f618bb932c769035356a89341-2889437796836404028.jpg" alt="">
+                            <div class="add-to-cart">
+                                <a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+                            </div>
+                            <div class="caption">
+                                <h4 class="pull-right">$4</h4>
+                                <h4><a href="product.html">4<sup>th</sup> Product</a></h4>
+                                <p>Book 4</p>
+                                <div class="ratings">
+                                    <p class="pull-right"><a href="product.html#comments">15 reviews</a></p>
+                                    <p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <img src="2c46fae5a907a6ec6bdd7f8549608958-2889437113076532077.jpg" alt="">
+                            <div class="add-to-cart">
+                                <a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+                            </div>
+                            <div class="caption">
+                                <h4 class="pull-right">$2</h4>
+                                <h4><a href="product.html">5<sup>th</sup> Product</a></h4>
+                                <p>Book 5</p>
+                                <div class="ratings">
+                                    <p class="pull-right"><a href="product.html#comments">15 reviews</a></p>
+                                    <p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <img src="1ae520b211688a74f5f20b042ae7aa55-2889439529201161740.jpg" alt="">
+                            <div class="add-to-cart">
+                                <a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+                            </div>
+                            <div class="caption">
+                                <h4 class="pull-right">$5</h4>
+                                <h4><a href="product.html">6<sup>th</sup> Product</a></h4>
+                                <p>Book 6</p>
+                                <div class="ratings">
+                                    <p class="pull-right"><a href="product.html#comments">15 reviews</a></p>
+                                    <p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row text-center">
+            <ul class="pagination">
+                <li class="disabled"><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+        </div>
+        <!-- Footer -->
+    </div>
+    <!-- jQuery Version 1.11.0 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
